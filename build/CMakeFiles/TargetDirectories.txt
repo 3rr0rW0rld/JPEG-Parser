@@ -1,0 +1,3 @@
+/home/error_world/Documents/Code/JPEG/build/CMakeFiles/jpeg_proj.dir
+/home/error_world/Documents/Code/JPEG/build/CMakeFiles/edit_cache.dir
+/home/error_world/Documents/Code/JPEG/build/CMakeFiles/rebuild_cache.dir
