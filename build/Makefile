@@ -129,29 +129,53 @@ jpeg_proj/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/build
 .PHONY : jpeg_proj/fast
 
-JPEGLoader.o: JPEGLoader.cpp.o
-.PHONY : JPEGLoader.o
+ByteFileReader.o: ByteFileReader.cpp.o
+.PHONY : ByteFileReader.o
 
 # target to build an object file
-JPEGLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o
-.PHONY : JPEGLoader.cpp.o
+ByteFileReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o
+.PHONY : ByteFileReader.cpp.o
 
-JPEGLoader.i: JPEGLoader.cpp.i
-.PHONY : JPEGLoader.i
+ByteFileReader.i: ByteFileReader.cpp.i
+.PHONY : ByteFileReader.i
 
 # target to preprocess a source file
-JPEGLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.i
-.PHONY : JPEGLoader.cpp.i
+ByteFileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.i
+.PHONY : ByteFileReader.cpp.i
 
-JPEGLoader.s: JPEGLoader.cpp.s
-.PHONY : JPEGLoader.s
+ByteFileReader.s: ByteFileReader.cpp.s
+.PHONY : ByteFileReader.s
 
 # target to generate assembly for a file
-JPEGLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.s
-.PHONY : JPEGLoader.cpp.s
+ByteFileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.s
+.PHONY : ByteFileReader.cpp.s
+
+JPEGParser.o: JPEGParser.cpp.o
+.PHONY : JPEGParser.o
+
+# target to build an object file
+JPEGParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o
+.PHONY : JPEGParser.cpp.o
+
+JPEGParser.i: JPEGParser.cpp.i
+.PHONY : JPEGParser.i
+
+# target to preprocess a source file
+JPEGParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.i
+.PHONY : JPEGParser.cpp.i
+
+JPEGParser.s: JPEGParser.cpp.s
+.PHONY : JPEGParser.s
+
+# target to generate assembly for a file
+JPEGParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.s
+.PHONY : JPEGParser.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... jpeg_proj"
-	@echo "... JPEGLoader.o"
-	@echo "... JPEGLoader.i"
-	@echo "... JPEGLoader.s"
+	@echo "... ByteFileReader.o"
+	@echo "... ByteFileReader.i"
+	@echo "... ByteFileReader.s"
+	@echo "... JPEGParser.o"
+	@echo "... JPEGParser.i"
+	@echo "... JPEGParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

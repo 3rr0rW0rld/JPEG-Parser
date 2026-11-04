@@ -86,34 +86,50 @@ CMakeFiles/jpeg_proj.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_proj.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/error_world/Documents/Code/JPEG/main.cpp -o CMakeFiles/jpeg_proj.dir/main.cpp.s
 
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o: CMakeFiles/jpeg_proj.dir/flags.make
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o: /home/error_world/Documents/Code/JPEG/JPEGLoader.cpp
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o: CMakeFiles/jpeg_proj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/error_world/Documents/Code/JPEG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o -MF CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o.d -o CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o -c /home/error_world/Documents/Code/JPEG/JPEGLoader.cpp
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o: CMakeFiles/jpeg_proj.dir/flags.make
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o: /home/error_world/Documents/Code/JPEG/ByteFileReader.cpp
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o: CMakeFiles/jpeg_proj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/error_world/Documents/Code/JPEG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o -MF CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o.d -o CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o -c /home/error_world/Documents/Code/JPEG/ByteFileReader.cpp
 
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/error_world/Documents/Code/JPEG/JPEGLoader.cpp > CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.i
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/error_world/Documents/Code/JPEG/ByteFileReader.cpp > CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.i
 
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/error_world/Documents/Code/JPEG/JPEGLoader.cpp -o CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.s
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/error_world/Documents/Code/JPEG/ByteFileReader.cpp -o CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.s
+
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o: CMakeFiles/jpeg_proj.dir/flags.make
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o: /home/error_world/Documents/Code/JPEG/JPEGParser.cpp
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o: CMakeFiles/jpeg_proj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/error_world/Documents/Code/JPEG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o -MF CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o.d -o CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o -c /home/error_world/Documents/Code/JPEG/JPEGParser.cpp
+
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/error_world/Documents/Code/JPEG/JPEGParser.cpp > CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.i
+
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/error_world/Documents/Code/JPEG/JPEGParser.cpp -o CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.s
 
 # Object files for target jpeg_proj
 jpeg_proj_OBJECTS = \
 "CMakeFiles/jpeg_proj.dir/main.cpp.o" \
-"CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o"
+"CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o" \
+"CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o"
 
 # External object files for target jpeg_proj
 jpeg_proj_EXTERNAL_OBJECTS =
 
 jpeg_proj: CMakeFiles/jpeg_proj.dir/main.cpp.o
-jpeg_proj: CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o
+jpeg_proj: CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o
+jpeg_proj: CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o
 jpeg_proj: CMakeFiles/jpeg_proj.dir/build.make
 jpeg_proj: CMakeFiles/jpeg_proj.dir/compiler_depend.ts
 jpeg_proj: CMakeFiles/jpeg_proj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/error_world/Documents/Code/JPEG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable jpeg_proj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/error_world/Documents/Code/JPEG/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable jpeg_proj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jpeg_proj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

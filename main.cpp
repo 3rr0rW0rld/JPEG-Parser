@@ -1,15 +1,43 @@
 #include <iostream>
-#include <filesystem>
-#include <fstream>
+#include <print>
 
-#include "JPEGLoader.h"
+#include "JPEGParser.h"
 
 int main(){
-    JPEGLoader jpegLoader {};
-    const std::filesystem::path imagePath {"images/input/pexels-image.jpg"};
-    jpegLoader.loadFile(imagePath);
-    std::cout << '\n';
-    jpegLoader.printSegments();
+    JPEGParser parser {"images/input/pexels-image.jpg"};
+    
+    while (!parser.isOnScan()){
+        parser.parseSegment();
+    }
 
+    std::println("JPEG INFO: ");
+    std::println("Image dimensions: {}x{}", parser.getWidth(), parser.getHeight());
 
+    for (int id{1}; id <= parser.getNbColorComponents(); ++id){
+        const ColorComponentSpecs& spec {parser.getComponentSpec(id)};
+        std::println();
+        std::println("id={} dc={} ac={} h={} v={} qtId={}", spec.id, spec.dcEntropyCodingSelector, spec.acEntropyCodingSelector, spec.horizontalSamplingRatio, spec.verticalSamplingRatio, spec.quantizationTableIndex);
+    }
+
+    for (int i{}; i < 2; ++i){
+        const QuantizationTable& quantTable {parser.getQuantizationTable(i)};
+        std::println();
+        std::println("ID={}", quantTable.id);
+        for (int i{}; i < 64; ++i){
+            std::print("{0:#x} ", quantTable.values.getByte(i));
+        }
+    }
+
+    for (int i{}; i < 4; ++i){
+        const HuffmanTable huffTable {parser.getHuffmanTable(i)};
+        std::println();
+        std::println("ID={} TYPE={}", huffTable.id, (huffTable.isAC ? "AC" : "DC"));
+        for (int i{}; i < 16; ++i){
+            std::print("{} : ", i+1);
+            for (int j{}; j < huffTable.codes[i].size(); ++j){
+                std::print("{0:#x} ", huffTable.codes[i].getByte(j));
+            }
+            std::println();
+        }
+    }
 }

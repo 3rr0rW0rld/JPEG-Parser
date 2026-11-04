@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/error_world/Documents/Code/JPEG
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++26
 

@@ -3,7 +3,8 @@ jpeg_proj: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/jpeg_proj.dir/main.cpp.o \
-  CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o \
+  CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o \
+  CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -44,7 +45,9 @@ jpeg_proj: \
 
 CMakeFiles/jpeg_proj.dir/main.cpp.o:
 
-CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o:
+CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o:
+
+CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 

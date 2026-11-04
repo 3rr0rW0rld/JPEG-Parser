@@ -190,9 +190,9 @@ CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/error_world/Documents/Code/JPEG/binary-converter.h \
+ /home/error_world/Documents/Code/JPEG/BinaryUtils.h \
  /usr/include/c++/16/iostream \
- /home/error_world/Documents/Code/JPEG/huffman.h \
+ /home/error_world/Documents/Code/JPEG/Huffman.h \
  /usr/include/c++/16/memory \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
  /usr/include/c++/16/bits/shared_ptr_atomic.h \
@@ -203,4 +203,5 @@ CMakeFiles/jpeg_proj.dir/JPEGLoader.cpp.o: \
  /usr/include/c++/16/bits/ranges_uninitialized.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h /usr/include/c++/16/queue \
  /usr/include/c++/16/deque /usr/include/c++/16/bits/stl_deque.h \
- /usr/include/c++/16/bits/deque.tcc /usr/include/c++/16/bits/stl_queue.h
+ /usr/include/c++/16/bits/deque.tcc /usr/include/c++/16/bits/stl_queue.h \
+ /usr/include/c++/16/bitset
