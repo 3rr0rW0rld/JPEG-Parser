@@ -15,10 +15,13 @@ PRIVATE
     main.cpp
     ByteFileReader.cpp
     JPEGParser.cpp
+    HuffmanDecoder.cpp
 
 PUBLIC
     FILE_SET HEADERS
     FILES
         ByteFileReader.h
         JPEGParser.h
+        HuffmanDecoder.h
+        utils.h
 )

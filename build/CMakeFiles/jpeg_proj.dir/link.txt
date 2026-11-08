@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/jpeg_proj.dir/link.d CMakeFiles/jpeg_proj.dir/main.cpp.o CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o -o jpeg_proj
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/jpeg_proj.dir/link.d CMakeFiles/jpeg_proj.dir/main.cpp.o CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o -o jpeg_proj

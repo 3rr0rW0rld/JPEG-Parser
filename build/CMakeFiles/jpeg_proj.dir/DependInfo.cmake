@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/error_world/Documents/Code/JPEG/ByteFileReader.cpp" "CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o" "gcc" "CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o.d"
+  "/home/error_world/Documents/Code/JPEG/HuffmanDecoder.cpp" "CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o" "gcc" "CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o.d"
   "/home/error_world/Documents/Code/JPEG/JPEGParser.cpp" "CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o" "gcc" "CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o.d"
   "/home/error_world/Documents/Code/JPEG/main.cpp" "CMakeFiles/jpeg_proj.dir/main.cpp.o" "gcc" "CMakeFiles/jpeg_proj.dir/main.cpp.o.d"
   "" "jpeg_proj" "gcc" "CMakeFiles/jpeg_proj.dir/link.d"

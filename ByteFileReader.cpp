@@ -13,11 +13,36 @@ void ByteFileReader::loadFile(std::string_view filePathName){
     fileStream.open(currentPath);
 }
 
+
+bool ByteFileReader::readBit(){
+    if (bitIndex >= 8){
+        bitIndex = 0;
+
+        char result{};
+        fileStream.read(&result, 1);
+        currentByte = static_cast<byte>(result);
+    }
+
+    return static_cast<bool>((currentByte >> (7-bitIndex++)) & 1);
+}
+
+ByteArray ByteFileReader::readBits(int count){
+    ByteArray result {};
+
+    for (int i{}; i < count; ++i){
+        result.append(static_cast<byte>(readBit()));
+    }
+
+    return result;
+}
+
 byte ByteFileReader::readByte(){
     char result {};
     fileStream.read(&result, 1);
+    currentByte = static_cast<byte>(result);
+    bitIndex = 8;
 
-    return static_cast<byte>(result);
+    return currentByte;
 }
 
 ByteArray ByteFileReader::readBytes(int count){
@@ -28,4 +53,10 @@ ByteArray ByteFileReader::readBytes(int count){
     }
 
     return result;
+}
+
+void ByteFileReader::skipToEndOfByte(){
+    if (bitIndex > 0){
+        bitIndex = 8;
+    }
 }

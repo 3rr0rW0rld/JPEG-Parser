@@ -193,4 +193,16 @@ CMakeFiles/jpeg_proj.dir/main.cpp.o: \
  /usr/include/c++/16/bits/fstream.tcc /usr/include/c++/16/vector \
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc
+ /usr/include/c++/16/bits/vector.tcc \
+ /home/error_world/Documents/Code/JPEG/HuffmanDecoder.h \
+ /usr/include/c++/16/memory \
+ /usr/include/c++/16/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/16/bits/shared_ptr_atomic.h \
+ /usr/include/c++/16/bits/atomic_base.h \
+ /usr/include/c++/16/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/16/bits/atomic_wait.h \
+ /usr/include/c++/16/backward/auto_ptr.h \
+ /usr/include/c++/16/bits/ranges_uninitialized.h \
+ /usr/include/c++/16/bits/out_ptr.h /usr/include/c++/16/bits/indirect.h \
+ /usr/include/c++/16/pstl/glue_memory_defs.h \
+ /usr/include/c++/16/pstl/execution_defs.h

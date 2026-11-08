@@ -5,6 +5,7 @@ jpeg_proj: \
   CMakeFiles/jpeg_proj.dir/main.cpp.o \
   CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o \
   CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o \
+  CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -48,6 +49,8 @@ CMakeFiles/jpeg_proj.dir/main.cpp.o:
 CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.o:
 
 CMakeFiles/jpeg_proj.dir/JPEGParser.cpp.o:
+
+CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 

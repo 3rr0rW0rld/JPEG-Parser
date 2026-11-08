@@ -4,7 +4,7 @@
 #include "JPEGParser.h"
 
 int main(){
-    JPEGParser parser {"images/input/pexels-image.jpg"};
+    JPEGParser parser {"images/input/profile.jpg"};
     
     while (!parser.isOnScan()){
         parser.parseSegment();
@@ -28,16 +28,27 @@ int main(){
         }
     }
 
-    for (int i{}; i < 4; ++i){
-        const HuffmanTable huffTable {parser.getHuffmanTable(i)};
-        std::println();
-        std::println("ID={} TYPE={}", huffTable.id, (huffTable.isAC ? "AC" : "DC"));
-        for (int i{}; i < 16; ++i){
-            std::print("{} : ", i+1);
-            for (int j{}; j < huffTable.codes[i].size(); ++j){
-                std::print("{0:#x} ", huffTable.codes[i].getByte(j));
-            }
-            std::println();
-        }
-    }
+
+
+    parser.parseScan();
+
+    parser.dequantize();
+
+    //for (int i{}; i < 4; ++i){
+        //const HuffmanTable& huffTable {parser.getHuffmanDecoder(i).getHuffmanTable()};
+
+        //std::println();
+        //std::println("ID={} TYPE={}", huffTable.id, (huffTable.isAC ? "AC" : "DC"));
+        //for (int i{}; i < 16; ++i){
+            //std::print("{} : ", i+1);
+            //for (int j{}; j < huffTable.codes[i].size(); ++j){
+                //std::print("{0:#x} ", huffTable.codes[i].getByte(j));
+            //}
+            //std::println();
+        //}
+    //}
+
+    std::println();
+
+
 }

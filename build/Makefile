@@ -153,6 +153,30 @@ ByteFileReader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/ByteFileReader.cpp.s
 .PHONY : ByteFileReader.cpp.s
 
+HuffmanDecoder.o: HuffmanDecoder.cpp.o
+.PHONY : HuffmanDecoder.o
+
+# target to build an object file
+HuffmanDecoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.o
+.PHONY : HuffmanDecoder.cpp.o
+
+HuffmanDecoder.i: HuffmanDecoder.cpp.i
+.PHONY : HuffmanDecoder.i
+
+# target to preprocess a source file
+HuffmanDecoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.i
+.PHONY : HuffmanDecoder.cpp.i
+
+HuffmanDecoder.s: HuffmanDecoder.cpp.s
+.PHONY : HuffmanDecoder.s
+
+# target to generate assembly for a file
+HuffmanDecoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_proj.dir/build.make CMakeFiles/jpeg_proj.dir/HuffmanDecoder.cpp.s
+.PHONY : HuffmanDecoder.cpp.s
+
 JPEGParser.o: JPEGParser.cpp.o
 .PHONY : JPEGParser.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... ByteFileReader.o"
 	@echo "... ByteFileReader.i"
 	@echo "... ByteFileReader.s"
+	@echo "... HuffmanDecoder.o"
+	@echo "... HuffmanDecoder.i"
+	@echo "... HuffmanDecoder.s"
 	@echo "... JPEGParser.o"
 	@echo "... JPEGParser.i"
 	@echo "... JPEGParser.s"

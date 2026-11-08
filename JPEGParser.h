@@ -1,8 +1,10 @@
 #pragma once
 
 #include <unordered_map>
+#include <print>
 
 #include "ByteFileReader.h"
+#include "HuffmanDecoder.h"
 
 enum class MarkerType : uint8_t{
     SOI = 0xD8,
@@ -36,15 +38,6 @@ struct QuantizationTable {
     ByteArray values {};
 };
 
-struct HuffmanTable {
-
-    int id {};
-    bool isAC {false};
-
-    std::array<ByteArray, 16> codes {};
-
-};
-
 
 
 class JPEGParser {
@@ -67,9 +60,12 @@ private:
     std::unordered_map<int, ColorComponentSpecs> colorComponentSpecs {};
 
     std::vector<QuantizationTable> quantizationTables {};
-    std::vector<HuffmanTable> huffmanTables {};
+    std::vector<HuffmanDecoder> huffmanDecoders {};
 
     bool onScan {false};
+
+    std::array<std::vector<ByteArray>, 4> mcus {};
+    std::array<std::vector<ByteArray>, 4> dequantizedMcus {};
 
 
 public:
@@ -83,6 +79,8 @@ public:
     void parseHuffmanTable();
     void parseQuantizationTable();
 
+    void parseScan();
+
     void skipSegment();
 
     bool isOnScan() const {return onScan;}
@@ -92,5 +90,12 @@ public:
     int getNbColorComponents() const {return nbColorComponents;}
     const ColorComponentSpecs& getComponentSpec(int id) {return colorComponentSpecs[id];}
     const QuantizationTable& getQuantizationTable(int index) {return quantizationTables[index];}
-    const HuffmanTable& getHuffmanTable(int index) {return huffmanTables[index];}
+    HuffmanDecoder& getHuffmanDecoder(int index) {return huffmanDecoders[index];}
+    HuffmanDecoder& getHuffmanDecoder(bool isAC, int id);
+
+    ByteFileReader& getReader() {return reader;}
+
+    ByteArray getBlock(int acId, int dcId, int prevDCCoeff);
+
+    void dequantize();
 };
